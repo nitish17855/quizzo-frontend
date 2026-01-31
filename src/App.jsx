@@ -6,7 +6,7 @@ import Home_page from './Page/home_page.jsx'
 import {  Routes, Route } from 'react-router-dom';
 
 import Leaderboard from './Page/leaderboard.jsx'
-import './services/subject_Card.css'
+import './services/subject_card.css'
 import Login from './services/login.jsx'
 import Signup from './Page/signup.jsx'
 import Layout from './services/Layout.jsx';
