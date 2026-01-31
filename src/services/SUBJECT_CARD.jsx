@@ -1,4 +1,4 @@
-import './SUBJECT_CARD.css'
+import "./subjject_card.css"
 import Home_page from '../Page/home_page';
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router";
