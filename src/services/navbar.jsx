@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import './SUBJECT_CARD.css'
+import "./subject_card.css"
 import Home_page from "../Page/home_page.jsx";
 
 
