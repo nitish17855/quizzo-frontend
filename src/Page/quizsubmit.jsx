@@ -1,10 +1,10 @@
-
+const API_URL = import.meta.env.VITE_API_URL;
      const token = localStorage.getItem("token");
 
     
        const handle = async () =>{
-    try {
-      const response = await fetch("http://localhost:4000/user//submit_quiz", {
+    try {ht
+      const response = await fetch(`${API_URL}/user//submit_quiz`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

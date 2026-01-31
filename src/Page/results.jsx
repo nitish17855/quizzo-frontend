@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"; 
 import "./results.css"
 import { useParams } from "react-router-dom";
-
+const API_URL = import.meta.env.VITE_API_URL;
 function Results() {
   const { attempt_Id } = useParams();
   const [result, setResult] = useState(null);
@@ -9,7 +9,7 @@ function Results() {
   useEffect(() => {
     const token = localStorage.getItem("token");
 
-    fetch(`http://localhost:4000/user/result/${attempt_Id}`, {
+    fetch(`${API_URL}/user/result/${attempt_Id}`, {
       headers: {
         "Content-Type": "application/json",
         Authorization: `Bearer ${token}`,

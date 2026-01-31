@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function Create_quiz() {
 
@@ -18,7 +19,7 @@ function Create_quiz() {
 
 const handlecreate = async() =>{
     const token = localStorage.getItem("token");
-    const response = await fetch("http://localhost:4000/user/createquiz",{
+    const response = await fetch(`${API_URL}/user/createquiz`,{
         method:"POST" ,
         headers: {
         "Content-Type": "application/json",

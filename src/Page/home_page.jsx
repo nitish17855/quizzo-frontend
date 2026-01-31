@@ -1,7 +1,7 @@
 import { useEffect , useState } from 'react';
 import Subject from '../services/SUBJECT_CARD'
 import "../services/SUBJECT_CARD.css"
-
+const API_URL = import.meta.env.VITE_API_URL;
 
 
 function Home_page() {
@@ -12,7 +12,7 @@ const token = localStorage.getItem("token");
 console.log("token:", token);
 
 useEffect(() => {
-  fetch("http://localhost:4000/user/api/quizzes", {
+  fetch(`${API_URL}/user/api/quizzes`, {
         method: "GET", // NO NEED TO WRITE IT BCZ GET IS DEFAULT 
         headers: {
           //"Content-Type": "application/json",

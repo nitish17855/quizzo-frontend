@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import loginImage from "./images/login/Gemini_Generated_Image_ph4n63ph4n63ph4n.png";
-
+const API_URL = import.meta.env.VITE_API_URL;
 
 import './login.css' ;
 import Signup from "../Page/signup";
@@ -17,7 +17,7 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch("http://localhost:4000/user/login", {
+      const response = await fetch(`${API_URL}/user/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

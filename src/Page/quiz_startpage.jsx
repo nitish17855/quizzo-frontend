@@ -12,13 +12,13 @@ const[ currentIndex , setcurrentIndex] = useState(0 )
 const [answers, setAnswers] = useState([]);
  const navigate = useNavigate();
   
-
+const API_URL = import.meta.env.VITE_API_URL;
 
 const { quizId } = useParams();
 const token = localStorage.getItem("token");
 
   useEffect(() => {
-    fetch(`http://localhost:4000/user/attempt-quiz/${quizId}`, {
+    fetch(`${API_URL}/user/attempt-quiz/${quizId}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
