@@ -1,6 +1,6 @@
 import { useEffect , useState } from 'react';
 import Subject from '../services/SUBJECT_CARD'
-import "../services/subject_card.css"
+import "../services/SUBJECT_CARD.css"
 
 
 
