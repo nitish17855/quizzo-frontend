@@ -1,0 +1,43 @@
+
+.result {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: system-ui, sans-serif;
+  color: #222;
+}
+
+
+.score {
+  text-align: center;
+  color: wheat;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+
+.inside_result {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  background: #fafafa;
+}
+
+
+.Question {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+
+.correctAnswer {
+  color: #16a34a; /* green */
+  margin-bottom: 4px;
+}
+
+
+.Attempted_Answerc {
+  color: #dc2626; /* red */
+}
